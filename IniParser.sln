@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniParserUser", "IniParserUser\IniParserUser.csproj", "{A014B405-EDA4-4FFF-9236-EEF5F3DCAA0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IniParser", "IniParser\IniParser.csproj", "{8E43507B-A2C9-4B1C-A6C8-DCE4D702A5EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A014B405-EDA4-4FFF-9236-EEF5F3DCAA0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A014B405-EDA4-4FFF-9236-EEF5F3DCAA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A014B405-EDA4-4FFF-9236-EEF5F3DCAA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A014B405-EDA4-4FFF-9236-EEF5F3DCAA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E43507B-A2C9-4B1C-A6C8-DCE4D702A5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E43507B-A2C9-4B1C-A6C8-DCE4D702A5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E43507B-A2C9-4B1C-A6C8-DCE4D702A5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E43507B-A2C9-4B1C-A6C8-DCE4D702A5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE94A80F-8DB8-4A34-89F6-641F5781D5B5}
+	EndGlobalSection
+EndGlobal

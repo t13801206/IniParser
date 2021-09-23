@@ -1,7 +1,10 @@
 ﻿using System.Windows;
 
-namespace IniParserUser
+namespace IniFileUser.Views
 {
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()

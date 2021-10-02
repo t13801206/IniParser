@@ -11,7 +11,7 @@ namespace IniFileUser
     {
         protected override Window CreateShell()
         {
-            return Container.Resolve<MainWindow>();
+            return Container.Resolve<SampleProgram>();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

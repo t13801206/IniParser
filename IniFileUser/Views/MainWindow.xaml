@@ -6,23 +6,28 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:prism="http://prismlibrary.com/"
     xmlns:viewmodels="clr-namespace:IniFileUser.ViewModels"
-    Width="525"
+    Width="600"
     Height="550"
     d:DataContext="{d:DesignInstance Type=viewmodels:MainWindowViewModel}"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
-    <Window.Resources>
-        <CollectionViewSource x:Key="categoryViewSource" Source="{Binding CategoryViewSource}" />
-    </Window.Resources>
 
     <StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Section Filtering" />
+            <TextBox
+                Width="100"
+                Margin="20"
+                Text="{Binding FilterText.Value, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
 
         <DataGrid
             Height="300"
             Margin="20"
             AutoGenerateColumns="False"
             EnableRowVirtualization="True"
-            ItemsSource="{Binding Source={StaticResource categoryViewSource}}"
+            ItemsSource="{Binding PropertyCollection}"
             RowDetailsVisibilityMode="VisibleWhenSelected">
             <DataGrid.Columns>
                 <DataGridTextColumn
@@ -48,15 +53,16 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button
-            Margin="20"
-            Command="{Binding SaveButtonCommand}"
-            Content="Save" />
-
-        <Button
-            Margin="20"
-            Command="{Binding GreetingCommand}"
-            Content="Greeting" />
+        <StackPanel Orientation="Horizontal">
+            <Button
+                Margin="20"
+                Command="{Binding SaveButtonCommand}"
+                Content="Save" />
+            <Button
+                Margin="20"
+                Command="{Binding GreetingCommand}"
+                Content="Greeting" />
+        </StackPanel>
 
     </StackPanel>
 </Window>

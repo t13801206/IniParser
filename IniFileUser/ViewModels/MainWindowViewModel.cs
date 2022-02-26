@@ -65,7 +65,8 @@ namespace IniFileUser.ViewModels
                     return true;
 
                 var property = x as IniParser.Property;
-                return property.Section.Contains(FilterText.Value);
+                //return property.Section.Contains(FilterText.Value);
+                return property.Section.Contains(FilterText.Value) || property.Key.Contains(FilterText.Value) || property.Comment.Contains(FilterText.Value);
             };
         }
     }
